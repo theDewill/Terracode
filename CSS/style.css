@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+:root{
+    --prmclr1:rgb(255, 72, 0);
+    --prmclr1sub:#b14100;
+    --prmclr2:rgb(146, 146, 146);
+    --prmclr2sub:#5c5c5c;
+    --prmclr3:#ffffff;
+    --prm1font:'Roboto', sans-serif;
+    --prm2font:'Work Sans', sans-serif;
+
+}
+
+html{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration:none;
+    
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding:5px;
+    height: fit-content;
+    position:fixed;
+    width:100vw;
+}
+
+header .heading{
+    color: var(--prmclr3);
+    font-size: 1.5rem;
+    font-family: var(--prm1font);
+}
+
+header .join{
+    color:black;
+    font-size: 1.2rem;
+    font-family: var(--prm1font);
+    border:3px solid var(--prmclr1);
+    padding: 5px;
+    margin-right:11px;
+    background-color: var(--prmclr1);
+    border-radius:10px;
+    margin-left:auto ;
+    
+}
+
+header .sign{
+    color:var(--prmclr3);
+    font-size: 1.2rem;
+    font-family: var(--prm1font);
+    border:3px solid var(--prmclr1);
+    padding: 5px;
+    margin-right:35px;
+    border-radius:10px;
+    width:130px;
+    text-align: center;
+}
+
+.bckgrnd{
+    width: 100vw;
+    height: 300vh;
+    background-image: url(../IMG/dark\ eyes.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 835px;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.detailprm{
+    display: flex;
+    gap:10px;
+    height:70vh;
+    /*border:2px solid red;*/
+    margin-left:250px;
+    padding:10px;
+    margin-top:172px ;
+}
+
+.topic{
+    font-size: 7rem;
+    font-weight:600;
+    color: var(--prmclr3);
+    font-family: var(--prm1font);
+    line-height: 10px;
+    
+    
+
+}
+
+.topic .brand{
+    color: var(--prmclr1);
+    font-size: 9rem;
+}
+
+.topic .motto{
+    color: var(--prmclr2);
+    font-size: 1.4rem;
+    font-family: var(--prm2font);
+    letter-spacing: 4px;
+}
+
+.ordplc{
+    border:2px solid var(--prmclr1);
+    background-color: black;
+    color: var(--prmclr3);
+    font-size: 1.8rem;
+    padding:10px;
+    border-radius: 15px;
+    text-decoration: none;
+    
+    transition-property: background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
+    
+}
+
+.ordplc:hover{
+    background-color: var(--prmclr1);
+    color: black;
+    border:2px solid var(--prmclr1);
+    
+}
+.navi{
+    perspective: 669px;
+    align-self: center;
+    position: fixed;
+    left: -30px;
+    top: 205px;
+}
+
+
+.navi2{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    transform-style: preserve-3d;
+    
+    transform: rotateY(326deg);
+    
+    
+}
+
+
+.navi2 li a{
+    color: rgb(173, 173, 173);
+}
+
+
+
+li{
+    
+    margin:0;
+    padding:10px;
+    list-style-type:none;
+    
+    text-align: center;
+    
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-family: var(--prm1font);
+    background-color: rgb(26, 26, 26);
+    box-shadow:3px 2px 1px 2px rgb(53, 53, 53);
+    color: rgb(173, 173, 173);
+    
+}
+
+/*js apply dev settings here*/
+#devbtn{
+    
+    background-color: rgb(26, 26, 26);
+    box-shadow:3px 2px 1px 2px rgb(53, 53, 53);
+    color: rgb(173, 173, 173);
+
+}
+
+
+.navi2 .active{
+    background-color: var(--prmclr1);
+    box-shadow:3px 2px 1px 2px var(--prmclr1sub);
+    color:var(--prmclr3);
+}
+
+
+
+.navi2 li:hover,#devbtn:hover{
+    box-shadow:3px 2px 1px 2px rgb(163, 163, 163);
+    /*color: var(--prmclr3);*/
+    background-color: var(--prmclr3);
+    color: black;
+}
+
+/*making .active not change on hover*/
+
+.navi2 .active:hover{
+    background-color: var(--prmclr1);
+    box-shadow:3px 2px 1px 2px var(--prmclr1sub);
+    color:var(--prmclr3);
+}
+
+
+
+.descrip{
+    display: flex;
+    gap:30px;
+    /*border:3px solid var(--prmclr1);*/
+    justify-content: center;
+    align-items: center;
+    margin-top:20vh;
+    border-radius:20px;
+    min-width:1116px;
+    align-self: center;
+    padding:40px;
+}
+
+.webbuildimg{
+    height:auto;
+    width:40vw;
+    
+}
+.imgdec{
+    color: var(--prmclr3);
+    width:36vw;
+    align-self: center;
+    font-family: var(--prm2font);
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.imgdec p{
+    color: var(--prmclr1);
+    font-weight: 600;
+}
+
+.services{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:180px;
+}
+
+.services p{
+    font-family: var(--prm2font);
+    font-size: 2.8rem;
+    color: var(--prmclr1);
+    font-weight: 650;
+}
+
+.servicebox{
+    display: flex;
+    gap:20px;
+}
+
+.servicebox div{
+    border:2px solid white;
+    color: white;
+    border-radius:15px;
+    font-family: var(--prm1font);
+    font-weight: 600;
+    text-align: center;
+    padding:6px;
+    width: 210px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.servicebox div:hover{
+    border:2px solid orange;
+    color: rgb(0, 0, 0);
+    background-color: orange;
+}
+
+.developers{
+    display: flex;
+    flex-direction: column;
+    border-radius:10px;
+    border:4px solid orange;
+    width:1200px;
+    align-self: center;
+    margin-top: 331px;
+    padding-left:40px;
+    
+    padding-top:20px;
+    padding-bottom:20px;
+
+}
+
+.devtpc{
+    color: orange;
+    font-weight: 600;
+    font-family: var(--prm1font);
+    font-size: 2rem;
+    align-self: flex-start;
+}
+
+.dev1{
+    display: flex;
+    align-items: center;
+    gap:25px;
+    margin-top:40px;
+}
+
+.profpic1{
+    border-radius: 100px;
+    border:5px solid #4f4f4f;
+    height:192px;
+    width:168px;
+}
+
+/*info1 edit*/
+.profinfo1{
+    color: aliceblue;
+    font-family: var(--prm2font);
+    font-size: 1.5rem;
+    display: inline;
+    font-weight: 550;
+
+}
+
+.profinfo1 p{
+    color: var(--prmclr1);
+    margin:0;
+}
