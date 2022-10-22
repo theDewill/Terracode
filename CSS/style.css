@@ -1,6 +1,364 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
+
+@media screen and (max-width:600px){
+
+:root{
+        --prmclr1:rgb(255, 72, 0);
+        --prmclr1sub:#b14100;
+        --prmclr2:rgb(146, 146, 146);
+        --prmclr2sub:#5c5c5c;
+        --prmclr3:#ffffff;
+        --prm1font:'Roboto', sans-serif;
+        --prm2font:'Work Sans', sans-serif;
+    
+}
+
+
+html{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration:none;
+    
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    
+    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding:5px;
+    height: fit-content;
+    position:fixed;
+    width:100vw;
+}
+
+header .heading{
+    color: var(--prmclr3);
+    font-size: 1.5rem;
+    font-family: var(--prm1font);
+}
+
+header .join, header .sign{
+    display: none;
+}
+
+.bckgrnd{
+    width: 100vw;
+    height: 300vh;
+    background-image: url(../IMG/dark\ eyes.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 835px;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.detailprm{
+    display: flex;
+    gap:10px;
+    height:70vh;
+    /*border:2px solid red;*/
+    /*margin-left:250px;*/
+    padding:10px;
+    margin-top:172px ;
+    justify-content: center;
+}
+
+.topic{
+    font-size: 16vw;
+    font-weight:600;
+    color: var(--prmclr3);
+    font-family: var(--prm1font);
+    line-height: 10px;
+    text-align: center;
+    
+    
+
+}
+
+.topic .brand{
+    color: var(--prmclr1);
+    font-size: 18vw;
+}
+
+.topic .motto{
+    color: var(--prmclr2);
+    font-size: 5vw;
+    font-family: var(--prm2font);
+    letter-spacing: 4px;
+    line-height:1;
+    margin-bottom:4vh;
+}
+
+.ordplc{
+    border:2px solid var(--prmclr1);
+    background-color: black;
+    color: var(--prmclr3);
+    font-size: 6vw;/*1.5rem*/
+    padding:10px;
+    border-radius: 15px;
+    text-decoration: none;
+    
+    transition-property: background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
+    
+}
+
+.ordplc:hover{
+    background-color: var(--prmclr1);
+    color: black;
+    border:2px solid var(--prmclr1);
+    
+}
+.navi{
+    display:none;
+    perspective: 669px;
+    align-self: center;
+    position: fixed;
+    left: -30px;
+    top: 205px;
+}
+
+
+.navi2{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    transform-style: preserve-3d;
+    
+    transform: rotateY(326deg);
+    
+    
+}
+
+
+.navi2 li a{
+    color: rgb(173, 173, 173);
+}
+
+
+
+li{
+    
+    margin:0;
+    padding:10px;
+    list-style-type:none;
+    
+    text-align: center;
+    
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-family: var(--prm1font);
+    background-color: rgb(26, 26, 26);
+    box-shadow:3px 2px 1px 2px rgb(53, 53, 53);
+    color: rgb(173, 173, 173);
+    
+}
+
+/*js apply dev settings here*/
+#devbtn{
+    
+    background-color: rgb(26, 26, 26);
+    box-shadow:3px 2px 1px 2px rgb(53, 53, 53);
+    color: rgb(173, 173, 173);
+
+}
+
+
+.navi2 .active{
+    background-color: var(--prmclr1);
+    box-shadow:3px 2px 1px 2px var(--prmclr1sub);
+    color:var(--prmclr3);
+}
+
+
+
+.navi2 li:hover,#devbtn:hover{
+    box-shadow:3px 2px 1px 2px rgb(163, 163, 163);
+    /*color: var(--prmclr3);*/
+    background-color: var(--prmclr3);
+    color: black;
+}
+
+/*making .active not change on hover*/
+
+.navi2 .active:hover{
+    background-color: var(--prmclr1);
+    box-shadow:3px 2px 1px 2px var(--prmclr1sub);
+    color:var(--prmclr3);
+}
+
+
+
+.descrip{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    /*border:3px solid var(--prmclr1);*/
+    justify-content: center;
+    align-items: center;
+    margin-top:20vh;
+    border-radius:20px;
+    min-width:1116px;
+    align-self: center;
+    padding:40px;
+}
+
+.webbuildimg{
+    height:auto;
+    width:88vw;
+    
+}
+.imgdec{
+    color: var(--prmclr3);
+    width:93vw;
+    align-self: center;
+    font-family: var(--prm2font);
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.imgdec p{
+    color: var(--prmclr1);
+    font-weight: 600;
+}
+
+.services{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:180px;
+}
+
+.services p{
+    font-family: var(--prm2font);
+    font-size: 7.4vw;
+    color: var(--prmclr1);
+    font-weight: 650;
+    text-align: center;
+}
+
+.servicebox{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.servicebox div{
+    border:2px solid white;
+    color: white;
+    border-radius:15px;
+    font-family: var(--prm1font);
+    font-weight: 600;
+    text-align: center;
+    padding:6px;
+    width: 210px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.servicebox div:hover{
+    border:2px solid orange;
+    color: rgb(0, 0, 0);
+    background-color: orange;
+}
+
+.developers{
+    display: flex;
+    flex-direction: column;
+    border-radius:10px;
+    border:4px solid orange;
+    width:80vw;
+    align-self: center;
+    margin-top: 331px;
+    padding-top:20px;
+    padding-bottom:87px;
+
+}
+
+.devtpc{
+    color: orange;
+    font-weight: 600;
+    font-family: var(--prm1font);
+    font-size: 2rem;
+    align-self: center;
+}
+
+.dev1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:25px;
+    margin-top:40px;
+}
+
+.profpic1{
+    border-radius: 100px;
+    border:5px solid #4f4f4f;
+    height:192px;
+    width:168px;
+}
+
+/*info1 edit*/
+.profinfo1{
+    color: aliceblue;
+    font-family: var(--prm2font);
+    font-size: 4vw;
+    display: inline;
+    font-weight: 550;
+    text-align: center;
+    width:80vw;
+
+}
+
+.profinfo1 p{
+    color: var(--prmclr1);
+    margin:0;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:600px){
+
+
 :root{
     --prmclr1:rgb(255, 72, 0);
     --prmclr1sub:#b14100;
@@ -336,4 +694,6 @@ li{
 .profinfo1 p{
     color: var(--prmclr1);
     margin:0;
+}
+
 }
